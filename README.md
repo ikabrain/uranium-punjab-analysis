@@ -1,2 +1,2 @@
-# uranium-soil-analysis
-WIP
+# Uranium in Punjab Soil
+This is a WIP project taken under a professor on a topic I wanna help about... 
