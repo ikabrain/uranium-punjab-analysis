@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below:"
+authors:
+  - family-names: Mahajan
+    given-names: Ikansh
+title: "Ikansh's Uranium Exploratory Repository"
+date-released: 2025-07-05
+license: MIT
