@@ -1,2 +1,2 @@
-# Uranium in Punjab Soil
+# Uranium in Punjab Soil & Groundwater
 This is a WIP project taken under a professor on a topic I wanna help about... 
