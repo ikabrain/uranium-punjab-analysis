@@ -1,2 +1,3 @@
 # Uranium in Punjab Soil & Groundwater
-This is a WIP project taken under a professor on a topic I wanna help about... 
+WIP
+[Here's](https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing) the link to the current Google Sheets staging file where I am storing the data I discover.
