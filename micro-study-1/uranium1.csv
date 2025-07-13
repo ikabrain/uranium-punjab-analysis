@@ -1,4 +1,4 @@
-S.No.,Collection Year,Collection Month,Collection Date,City,Latitude,Longitude,Water Source,Depth of Water Level (m),Uranium concentration (µg/L),Error Term,Uranium Activity (Bq/L),Excess Cancer Risk (10^-4),LADD (µg/kg/day),Hazard Quotient (HQ)
+S.No.,Collection Year,Collection Month,Collection Date,Location,Latitude,Longitude,Water Source,Depth of Water Level (m),Mean Uranium Conc (ppb or ug/L),Error Term,Uranium Activity (Bq/L),Excess Cancer Risk (10^-4),LADD (µg/kg/day),Hazard Quotient (HQ)
 1,1992,June,,Guru Nanak Dev University,31.634129,74.825806,Tap,90.00 ,18.77 ,,0.47,,,
 2,1992,July,,Guru Nanak Dev University,31.634129,74.825806,Tap,90.00 ,20.23 ,,0.51,,,
 3,1992,June,,Tehsilpura,31.632052,74.888139,Tap,90.00 ,18.54 ,,0.47,,,
