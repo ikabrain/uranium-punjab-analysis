@@ -1,7 +1,8 @@
-# Uranium in Punjab Soil & Groundwater
+# Uranium in Punjab Groundwater
 
-WIP
+#### 🔗 Links to dataset
+ - [Google Sheets](https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing)
+ - [Kaggle Dataset](https://www.kaggle.com/datasets/thegenesis/uranium-in-punjabs-groundwater/)
 
-[Here's](https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing) the link to the current Google Sheets staging file where I stage & store the data I discover.
-
+### ✅ Screenshot of Result of first microstudy
 <img width="768" height="643" alt="Result of first microstudy" src="https://github.com/user-attachments/assets/f3cf9e1c-1856-4709-abba-6b708789c58a" />
