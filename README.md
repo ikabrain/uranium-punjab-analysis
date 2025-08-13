@@ -1,5 +1,7 @@
 # Uranium in Punjab Groundwater
 
+> *Data has been sourced & scraped from multiple resources. To view the links, open the [Google Sheet Workbook]((https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing)); each sheet has a cell with the source link.*
+
 Download depenedencies using:
 
 1. **pip**
