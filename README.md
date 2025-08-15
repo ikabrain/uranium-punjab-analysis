@@ -15,10 +15,13 @@ Download depenedencies using:
    ```
 
 Export your dependencies using:
-
+1. **pip**
 ```bash
-pip freeze > requirements.txt
-conda env export -n uranium > environment.yml
+pip list --format=freeze > requirements.txt
+```
+2. **conda**
+```bash
+conda env export --no-builds | grep -v "^prefix" > environment.yml                                                   
 ```
 
 #### 🔗 Links to dataset
