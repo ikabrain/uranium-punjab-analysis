@@ -1,4 +1,4 @@
-name: Commit Lint
+name: Lint Commit Messages
 
 on:
   push:
@@ -8,83 +8,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
-  lint-commits:
+  commitlint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetch full history to compare commits
-
-      - name: Extract and validate commit messages
-        run: |
-          set -e
-
-          # Determine the commit range based on event type
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            # For PRs, compare base branch with head
-            BASE_SHA="${{ github.event.pull_request.base.sha }}"
-            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
-            echo "Checking commits in PR: $BASE_SHA..$HEAD_SHA"
-          else
-            # For push events, use before and current SHA
-            BASE_SHA="${{ github.event.before }}"
-            HEAD_SHA="${{ github.sha }}"
-            echo "Checking commits in push: $BASE_SHA..$HEAD_SHA"
-          fi
-
-          # Handle case where before SHA might be 0000000000000000000000000000000000000000 (new branch)
-          if [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ] || [ -z "$BASE_SHA" ]; then
-            # For new branches, compare with the merge base of the default branch
-            BASE_SHA=$(git merge-base HEAD origin/main 2>/dev/null || git merge-base HEAD main 2>/dev/null || echo "")
-            if [ -z "$BASE_SHA" ]; then
-              # If no merge base found, check only the HEAD commit
-              BASE_SHA=$(git rev-parse HEAD^ 2>/dev/null || echo "")
-            fi
-          fi
-
-          # Extract commit messages
-          if [ -n "$BASE_SHA" ] && [ "$BASE_SHA" != "$HEAD_SHA" ]; then
-            COMMITS=$(git log --format=%s "$BASE_SHA..$HEAD_SHA" 2>/dev/null || echo "")
-          else
-            # Fallback: check only the HEAD commit
-            COMMITS=$(git log --format=%s -n 1 "$HEAD_SHA" 2>/dev/null || echo "")
-          fi
-
-          if [ -z "$COMMITS" ]; then
-            echo "No commits found to validate."
-            exit 0
-          fi
-
-          # Validate each commit message
-          REGEX='^(feat|fix|docs|test|ci|refactor|chore|perf): .+'
-          INVALID_COUNT=0
-          INVALID_COMMITS=()
-
-          while IFS= read -r commit_msg; do
-            if [ -n "$commit_msg" ]; then
-              if ! echo "$commit_msg" | grep -qE "$REGEX"; then
-                INVALID_COMMITS+=("$commit_msg")
-                ((INVALID_COUNT++))
-              fi
-            fi
-          done <<< "$COMMITS"
-
-          # Report results
-          if [ $INVALID_COUNT -gt 0 ]; then
-            echo "❌ Found $INVALID_COUNT invalid commit message(s):"
-            echo ""
-            for commit in "${INVALID_COMMITS[@]}"; do
-              echo "  - $commit"
-            done
-            echo ""
-            echo "Commit messages must follow the format:"
-            echo "  <type>: <description>"
-            echo ""
-            echo "Valid types: feat, fix, docs, test, ci, refactor, chore, perf"
-            echo "Example: feat(data): add new dataset for analysis"
-            exit 1
-          else
-            echo "✅ All commit messages are valid!"
-          fi
+      - uses: actions/checkout@v4
+      - uses: wagoid/commitlint-github-action@v6
