@@ -1,12 +1,17 @@
-name: "📄 Literature Review"
-description: "Suggest related paper(s) for review and insights and cross-verify references"
-title: "[LIT]: "
+name: "📄 Suggest a Paper"
+description: "Suggest related paper(s) for literature review, insights and cross-verify references"
+title: "[Literature]: <paper-title>"
 labels: ["literature"]
 body:
+  - type: markdown
+    id: intro-thanks
+    attributes:
+      value: "Thanks for taking the time to fill out this template! Please provide as much detail as possible to help us evaluate the suggested paper."
+
   - type: input
     id: citation
     attributes:
-      label: Citation / Link
+      label: "Citation / Link"
       placeholder: "Author et al., 2021, DOI: ..."
     validations:
       required: true
@@ -14,15 +19,15 @@ body:
   - type: textarea
     id: summary
     attributes:
-      label: Summary
-      placeholder: "3–5 sentence summary of the study"
+      label: "Summary"
+      placeholder: "3-5 sentence summary of the study"
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: relevance
     attributes:
-      label: Relevance to This Project
+      label: "Relevance to This Project"
       placeholder: "How this paper connects to uranium contamination in Punjab"
     validations:
       required: true
@@ -30,51 +35,44 @@ body:
   - type: textarea
     id: variables
     attributes:
-      label: Extractable Variables / Useful Data
+      label: "Extractable Variables / Useful Data"
       placeholder: "- pH range\n- Uranium values\n- Regression coefficients\n- Maps"
+    validations:
+      required: false
 
   - type: textarea
     id: related
     attributes:
-      label: Related Issues
-      placeholder: "Links to research questions or analysis tasks"
-name: "Literature Review Entry"
-description: "Capture insights and context from a single paper"
-title: "[LIT] <paper-title>"
-labels: ["literature"]
-body:
-  - type: input
-    id: citation
-    attributes:
-      label: Citation / Link
-      placeholder: "Author et al., 2021, DOI: ..."
+      label: "Related Info"
+      placeholder: "Includes links to research questions or analysis tasks"
     validations:
-      required: true
+      required: false
 
-  - type: textarea
-    id: summary
+  - type: checkboxes
+    id: terms
     attributes:
-      label: Summary
-      placeholder: "3–5 sentence summary of the study"
-    validations:
-      required: true
+      label: "Terms and Conditions"
+      options:
+        - label: "I have checked the existing [issues](https://github.com/ikabrain/uranium-punjab-analysis/issues)"
+          value: checked_issues
+          required: true
 
-  - type: textarea
-    id: relevance
-    attributes:
-      label: Relevance to This Project
-      placeholder: "How this paper connects to uranium contamination in Punjab"
-    validations:
-      required: true
+        - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CONTRIBUTING.md)."
+          value: read_guidelines
+          required: true
 
-  - type: textarea
-    id: variables
-    attributes:
-      label: Extractable Variables / Useful Data
-      placeholder: "- pH range\n- Uranium values\n- Regression coefficients\n- Maps"
+        - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CODE_OF_CONDUCT.md)."
+          value: agree_code_of_conduct
+          required: true
 
-  - type: textarea
-    id: related
-    attributes:
-      label: Related Issues
-      placeholder: "Links to research questions or analysis tasks"
+        - label: "I confirm that I have the right to suggest this paper and that this does not violate any copyright or intellectual property laws."
+          value: confirm_rights
+          required: true
+
+        - label: "I agree to have my suggestion reviewed and potentially included in the project's literature review."
+          value: agree_review
+          required: true
+
+        - label: "I want to work on extracting data from this paper."
+          value: want_to_work
+          required: false
