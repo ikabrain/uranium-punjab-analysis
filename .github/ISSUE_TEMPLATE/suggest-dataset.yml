@@ -70,25 +70,25 @@ body:
       label: "Checklist"
       options:
         - label: "I have checked the [existing list of datasets requested](https://github.com/ikabrain/uranium-punjab-analysis/issues?q=is%3Aissue+label%3Adata)."
-          value: checked_inventory
+          id: checked_issues
           required: true
 
         - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CONTRIBUTING.md)."
-          value: read_guidelines
+          id: read_guidelines
           required: true
 
         - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CODE_OF_CONDUCT.md)."
-          value: agree_code_of_conduct
+          id: agree_code_of_conduct
           required: true
 
         - label: "I confirm the dataset is accessible and not paywalled."
-          value: confirm_access
+          id: confirm_access
           required: true
 
         - label: "I agree to provide additional details if requested."
-          value: confirm_followup
+          id: confirm_followup
           required: true
 
         - label: "I want to help extract this dataset."
-          value: want_to_help
+          id: want_to_help
           required: false

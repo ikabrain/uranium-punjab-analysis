@@ -36,7 +36,7 @@ body:
     id: variables
     attributes:
       label: "Extractable Variables / Useful Data"
-      placeholder: "- pH range\n- Uranium values\n- Regression coefficients\n- Maps"
+      placeholder: "- pH range\n- Uranium ids\n- Regression coefficients\n- Maps"
     validations:
       required: false
 
@@ -54,25 +54,25 @@ body:
       label: "Terms and Conditions"
       options:
         - label: "I have checked the existing [issues](https://github.com/ikabrain/uranium-punjab-analysis/issues)"
-          value: checked_issues
+          id: checked_issues
           required: true
 
         - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CONTRIBUTING.md)."
-          value: read_guidelines
+          id: read_guidelines
           required: true
 
         - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CODE_OF_CONDUCT.md)."
-          value: agree_code_of_conduct
+          id: agree_code_of_conduct
           required: true
 
         - label: "I confirm that I have the right to suggest this paper and that this does not violate any copyright or intellectual property laws."
-          value: confirm_rights
+          id: confirm_rights
           required: true
 
         - label: "I agree to have my suggestion reviewed and potentially included in the project's literature review."
-          value: agree_review
+          id: agree_review
           required: true
 
         - label: "I want to work on extracting data from this paper."
-          value: want_to_work
+          id: want_to_work
           required: false
