@@ -36,7 +36,7 @@ body:
     id: variables
     attributes:
       label: "Extractable Variables / Useful Data"
-      placeholder: "- pH range\n- Uranium ids\n- Regression coefficients\n- Maps"
+      placeholder: "- pH range\n- Uranium conc\n- Regression coefficients\n- Maps"
     validations:
       required: false
 
@@ -57,11 +57,11 @@ body:
           id: checked_issues
           required: true
 
-        - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CONTRIBUTING.md)."
+        - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CONTRIBUTING.md)."
           id: read_guidelines
           required: true
 
-        - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/CODE_OF_CONDUCT.md)."
+        - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CODE_OF_CONDUCT.md)."
           id: agree_code_of_conduct
           required: true
 
