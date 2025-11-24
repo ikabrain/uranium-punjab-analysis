@@ -1,8 +1,15 @@
 # Uranium in Punjab Groundwater
 
-> *Data has been sourced & scraped from multiple resources. To view the links, open the [Google Sheet Workbook]((https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing)); each sheet has a cell with the source link.*
+![Anaconda Badge](https://img.shields.io/badge/conda-grey?logo=anaconda)
+![Python Badge](https://img.shields.io/badge/python-3.11%2B-blue?logo=python)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ikabrain/uranium-punjab-analysis?logo=github)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/ikabrain/uranium-punjab-analysis?logo=github)
+[![commitlint](https://github.com/ikabrain/uranium-punjab-analysis/actions/workflows/commitlint.yml/badge.svg)](https://github.com/ikabrain/uranium-punjab-analysis/actions/workflows/commitlint.yml?logo=github)
 
-Download depenedencies using:
+
+> _Data has been sourced & scraped from multiple resources. To view the links, open the [Google Sheet Workbook](<(https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing)>); each sheet has a cell with the source link._
+
+Download depenedencies using:badge
 
 1. **pip**
    ```bash
@@ -15,13 +22,17 @@ Download depenedencies using:
    ```
 
 Export your dependencies using:
+
 1. **pip**
+
 ```bash
 pip list --format=freeze > requirements.txt
 ```
+
 2. **conda**
+
 ```bash
-conda env export --no-builds | grep -v "^prefix" > environment.yml                                                   
+conda env export --no-builds | grep -v "^prefix" > environment.yml
 ```
 
 #### 🔗 Links to dataset
