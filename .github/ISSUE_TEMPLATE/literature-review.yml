@@ -1,0 +1,80 @@
+name: "📄 Literature Review"
+description: "Suggest related paper(s) for review and insights and cross-verify references"
+title: "[LIT]: "
+labels: ["literature"]
+body:
+  - type: input
+    id: citation
+    attributes:
+      label: Citation / Link
+      placeholder: "Author et al., 2021, DOI: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "3–5 sentence summary of the study"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance to This Project
+      placeholder: "How this paper connects to uranium contamination in Punjab"
+    validations:
+      required: true
+
+  - type: textarea
+    id: variables
+    attributes:
+      label: Extractable Variables / Useful Data
+      placeholder: "- pH range\n- Uranium values\n- Regression coefficients\n- Maps"
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues
+      placeholder: "Links to research questions or analysis tasks"
+name: "Literature Review Entry"
+description: "Capture insights and context from a single paper"
+title: "[LIT] <paper-title>"
+labels: ["literature"]
+body:
+  - type: input
+    id: citation
+    attributes:
+      label: Citation / Link
+      placeholder: "Author et al., 2021, DOI: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "3–5 sentence summary of the study"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance to This Project
+      placeholder: "How this paper connects to uranium contamination in Punjab"
+    validations:
+      required: true
+
+  - type: textarea
+    id: variables
+    attributes:
+      label: Extractable Variables / Useful Data
+      placeholder: "- pH range\n- Uranium values\n- Regression coefficients\n- Maps"
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues
+      placeholder: "Links to research questions or analysis tasks"
