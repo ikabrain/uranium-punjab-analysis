@@ -1,0 +1,94 @@
+name: "📊 Suggest a Dataset"
+description: "Propose a dataset that could support analysis, modeling, or validation for the research project."
+title: "[Data]: <dataset-name>"
+labels: ["data"]
+body:
+  - type: markdown
+    id: intro-thanks
+    attributes:
+      value: "Thanks for contributing! Please provide clear information about the dataset so we can evaluate its relevance and usability."
+
+  - type: input
+    id: dataset_link
+    attributes:
+      label: "Dataset Link / Source"
+      placeholder: "URL, DOI, repository link, government portal etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Dataset Description"
+      placeholder: "Relevant variables, location, time span, structure etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: "Relevance to This Project"
+      placeholder: "Explain how this dataset could assist uranium contamination analysis, modeling, or validation."
+    validations:
+      required: false
+
+  - type: textarea
+    id: variables
+    attributes:
+      label: "Key Extractable Variables"
+      placeholder: "- pH\n- TDS\n- EC\n- Well depth\n- Uranium values\n- Spatial coordinates\n- Date/time"
+    validations:
+      required: false
+
+  - type: input
+    id: format
+    attributes:
+      label: "Dataset Format"
+      placeholder: "CSV, XLSX, PDF (scanned), API endpoint, shapefile, TIFF, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: cleaning_needs
+    attributes:
+      label: "Expected Cleaning Requirements"
+      placeholder: "Missing values, OCR needed, merging required, coordinate conversion, etc."
+    validations:
+      required: false
+
+  - type: input
+    id: licensing
+    attributes:
+      label: "Licensing & Usage Permissions"
+      placeholder: "Open data? Restricted? Need citation? Government domain?"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have checked the [existing list of datasets requested](https://github.com/ikabrain/uranium-punjab-analysis/issues?q=is%3Aissue+label%3Adata)."
+          id: checked_issues
+          required: true
+
+        - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CONTRIBUTING.md)."
+          id: read_guidelines
+          required: true
+
+        - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CODE_OF_CONDUCT.md)."
+          id: agree_code_of_conduct
+          required: true
+
+        - label: "I confirm the dataset is accessible and not paywalled."
+          id: confirm_access
+          required: true
+
+        - label: "I agree to provide additional details if requested."
+          id: confirm_followup
+          required: true
+
+        - label: "I want to help extract this dataset."
+          id: want_to_help
+          required: false

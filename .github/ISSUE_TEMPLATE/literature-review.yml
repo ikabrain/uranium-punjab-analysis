@@ -1,0 +1,78 @@
+name: "📄 Suggest a Paper"
+description: "Suggest related paper(s) for literature review, insights and cross-verify references"
+title: "[Literature]: <paper-title>"
+labels: ["literature"]
+body:
+  - type: markdown
+    id: intro-thanks
+    attributes:
+      value: "Thanks for taking the time to fill out this template! Please provide as much detail as possible to help us evaluate the suggested paper."
+
+  - type: input
+    id: citation
+    attributes:
+      label: "Citation / Link"
+      placeholder: "Author et al., 2021, DOI: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      placeholder: "3-5 sentence summary of the study"
+    validations:
+      required: false
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: "Relevance to This Project"
+      placeholder: "How this paper connects to uranium contamination in Punjab"
+    validations:
+      required: true
+
+  - type: textarea
+    id: variables
+    attributes:
+      label: "Extractable Variables / Useful Data"
+      placeholder: "- pH range\n- Uranium conc\n- Regression coefficients\n- Maps"
+    validations:
+      required: false
+
+  - type: textarea
+    id: related
+    attributes:
+      label: "Related Info"
+      placeholder: "Includes links to research questions or analysis tasks"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Terms and Conditions"
+      options:
+        - label: "I have checked the existing [issues](https://github.com/ikabrain/uranium-punjab-analysis/issues)"
+          id: checked_issues
+          required: true
+
+        - label: "I have read and understood the project's [Contribution Guidelines](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CONTRIBUTING.md)."
+          id: read_guidelines
+          required: true
+
+        - label: "I agree to follow this project's [Code of Conduct](https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CODE_OF_CONDUCT.md)."
+          id: agree_code_of_conduct
+          required: true
+
+        - label: "I confirm that I have the right to suggest this paper and that this does not violate any copyright or intellectual property laws."
+          id: confirm_rights
+          required: true
+
+        - label: "I agree to have my suggestion reviewed and potentially included in the project's literature review."
+          id: agree_review
+          required: true
+
+        - label: "I want to work on extracting data from this paper."
+          id: want_to_work
+          required: false

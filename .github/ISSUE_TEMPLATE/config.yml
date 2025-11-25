@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing Guidelines
+    url: https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CONTRIBUTING.md
+    about: How to contribute to this project.
+  - name: Our Code of Conduct
+    url: https://github.com/ikabrain/uranium-punjab-analysis/blob/main/.github/CODE_OF_CONDUCT.md
+    about: Community standards and expectations.
