@@ -6,10 +6,12 @@
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/ikabrain/uranium-punjab-analysis?logo=github)
 [![commitlint](https://github.com/ikabrain/uranium-punjab-analysis/actions/workflows/commitlint.yml/badge.svg)](https://github.com/ikabrain/uranium-punjab-analysis/actions/workflows/commitlint.yml?logo=github)
 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
 
 > _Data has been sourced & scraped from multiple resources. To view the links, open the [Google Sheet Workbook](<(https://docs.google.com/spreadsheets/d/1YLMoh0YfT4zJe-DiPFVBRuhHBOm8oWjn5NrmUx8y-74/edit?usp=sharing)>); each sheet has a cell with the source link._
 
-Download depenedencies using:badge
+Download depenedencies using:
 
 1. **pip**
    ```bash
@@ -43,3 +45,14 @@ conda env export --no-builds | grep -v "^prefix" > environment.yml
 ### ✅ Screenshot of Result of first microstudy
 
 <img width="768" height="643" alt="Result of first microstudy" src="https://github.com/user-attachments/assets/f3cf9e1c-1856-4709-abba-6b708789c58a" />
+
+## License
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa]
+
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
