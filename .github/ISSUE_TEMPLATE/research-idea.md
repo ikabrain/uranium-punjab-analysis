@@ -10,22 +10,22 @@ assignees: ""
 <!-- 🔎 Search existing issues to avoid creating duplicates. -->
 <!-- Thanks for taking the time to submit your unique ideas and perceptions about the project! Please provide as much detail as possible to help us evaluate the suggestion. -->
 
-## Summary
+### Summary
 
 <!-- Write a brief summary of the idea, question, or hypothesis. -->
 
 
-## Motivation
+### Motivation
 
 <!-- Why does this matter? Explain the scientific or analytical motivation behind the idea. -->
 
 
-## Background
+### Background
 
 <!-- Include any necessary context, references, related work, or prior observations. -->
 
 
-## Proposed Approach
+### Proposed Approach
 
 <!-- If you have early thoughts on how to explore or test this, include them here. Consider including:
 
@@ -35,12 +35,12 @@ assignees: ""
 - Experiments or models -->
 
 
-## Expected Outcomes
+### Expected Outcomes
 
 <!-- What you think this might reveal or confirm? -->
 
 
-## Potential Challenges
+### Potential Challenges
 
 <!-- Any potential bottlenecks, for instance:
 
@@ -50,6 +50,6 @@ assignees: ""
 - Confounding factors -->
 
 
-## Relevant Links or Resources
+### Relevant Links or Resources
 
 <!-- Include papers, datasets, code, previous discussions, etc. -->
