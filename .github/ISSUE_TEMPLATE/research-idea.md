@@ -14,19 +14,16 @@ assignees: ""
 
 <!-- Write a brief summary of the idea, question, or hypothesis. -->
 
----
 
 ## Motivation
 
 <!-- Why does this matter? Explain the scientific or analytical motivation behind the idea. -->
 
----
 
 ## Background
 
 <!-- Include any necessary context, references, related work, or prior observations. -->
 
----
 
 ## Proposed Approach
 
@@ -37,13 +34,11 @@ assignees: ""
 - Analytical steps
 - Experiments or models -->
 
----
 
 ## Expected Outcomes
 
 <!-- What you think this might reveal or confirm? -->
 
----
 
 ## Potential Challenges
 
@@ -54,7 +49,6 @@ assignees: ""
 - Statistical or methodological risks
 - Confounding factors -->
 
----
 
 ## Relevant Links or Resources
 
